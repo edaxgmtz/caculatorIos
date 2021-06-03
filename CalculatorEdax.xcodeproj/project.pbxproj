@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4A10CAA02666D7C5005B273C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CA9F2666D7C5005B273C /* AppDelegate.swift */; };
-		4A10CAA22666D7C5005B273C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAA12666D7C5005B273C /* SceneDelegate.swift */; };
-		4A10CAA42666D7C5005B273C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAA32666D7C5005B273C /* ViewController.swift */; };
-		4A10CAA72666D7C5005B273C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A10CAA52666D7C5005B273C /* Main.storyboard */; };
 		4A10CAA92666D7D1005B273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A10CAA82666D7D1005B273C /* Assets.xcassets */; };
 		4A10CAAC2666D7D1005B273C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A10CAAA2666D7D1005B273C /* LaunchScreen.storyboard */; };
 		4A10CAB72666D7D1005B273C /* CalculatorEdaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAB62666D7D1005B273C /* CalculatorEdaxTests.swift */; };
 		4A10CAC22666D7D1005B273C /* CalculatorEdaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAC12666D7D1005B273C /* CalculatorEdaxUITests.swift */; };
+		4A10CADA2666DEA2005B273C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAD82666DEA2005B273C /* HomeViewController.swift */; };
+		4A10CADB2666DEA2005B273C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A10CAD92666DEA2005B273C /* HomeViewController.xib */; };
+		4A10CADD2667EDF9005B273C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CADC2667EDF9005B273C /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,6 @@
 /* Begin PBXFileReference section */
 		4A10CA9C2666D7C5005B273C /* CalculatorEdax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorEdax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A10CA9F2666D7C5005B273C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A10CAA12666D7C5005B273C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A10CAA32666D7C5005B273C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A10CAA62666D7C5005B273C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A10CAA82666D7D1005B273C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A10CAAB2666D7D1005B273C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A10CAAD2666D7D1005B273C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,9 @@
 		4A10CABD2666D7D1005B273C /* CalculatorEdaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorEdaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A10CAC12666D7D1005B273C /* CalculatorEdaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorEdaxUITests.swift; sourceTree = "<group>"; };
 		4A10CAC32666D7D1005B273C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A10CAD82666DEA2005B273C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A10CAD92666DEA2005B273C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4A10CADC2667EDF9005B273C /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				4A10CA9F2666D7C5005B273C /* AppDelegate.swift */,
-				4A10CAA12666D7C5005B273C /* SceneDelegate.swift */,
-				4A10CAA32666D7C5005B273C /* ViewController.swift */,
-				4A10CAA52666D7C5005B273C /* Main.storyboard */,
+				4A10CAD12666DD87005B273C /* Views */,
+				4A10CAD02666DD79005B273C /* Controllers */,
+				4A10CAD22666DD9B005B273C /* Models */,
+				4A10CAD32666DDA8005B273C /* Utils */,
+				4A10CACF2666D88C005B273C /* Supporting Files */,
 				4A10CAA82666D7D1005B273C /* Assets.xcassets */,
-				4A10CAAA2666D7D1005B273C /* LaunchScreen.storyboard */,
-				4A10CAAD2666D7D1005B273C /* Info.plist */,
 			);
 			path = CalculatorEdax;
 			sourceTree = "<group>";
@@ -126,6 +126,70 @@
 				4A10CAC32666D7D1005B273C /* Info.plist */,
 			);
 			path = CalculatorEdaxUITests;
+			sourceTree = "<group>";
+		};
+		4A10CACF2666D88C005B273C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAAD2666D7D1005B273C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A10CAD02666DD79005B273C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAD72666DE7A005B273C /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A10CAD12666DD87005B273C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAD62666DE6A005B273C /* Home */,
+				4A10CAD52666DE03005B273C /* Launch */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A10CAD22666DD9B005B273C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A10CAD32666DDA8005B273C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CADC2667EDF9005B273C /* UIButtonExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4A10CAD52666DE03005B273C /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAAA2666D7D1005B273C /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		4A10CAD62666DE6A005B273C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAD92666DEA2005B273C /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A10CAD72666DE7A005B273C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAD82666DEA2005B273C /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +297,7 @@
 			files = (
 				4A10CAAC2666D7D1005B273C /* LaunchScreen.storyboard in Resources */,
 				4A10CAA92666D7D1005B273C /* Assets.xcassets in Resources */,
-				4A10CAA72666D7C5005B273C /* Main.storyboard in Resources */,
+				4A10CADB2666DEA2005B273C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A10CAA42666D7C5005B273C /* ViewController.swift in Sources */,
 				4A10CAA02666D7C5005B273C /* AppDelegate.swift in Sources */,
-				4A10CAA22666D7C5005B273C /* SceneDelegate.swift in Sources */,
+				4A10CADD2667EDF9005B273C /* UIButtonExtension.swift in Sources */,
+				4A10CADA2666DEA2005B273C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A10CAA52666D7C5005B273C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A10CAA62666D7C5005B273C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A10CAAA2666D7D1005B273C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +494,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VSY8B6P2C;
-				INFOPLIST_FILE = CalculatorEdax/Info.plist;
+				INFOPLIST_FILE = "CalculatorEdax/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +514,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VSY8B6P2C;
-				INFOPLIST_FILE = CalculatorEdax/Info.plist;
+				INFOPLIST_FILE = "CalculatorEdax/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
